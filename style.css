@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "JannaLT";
+    src: url("fonts/JannaLT-Regular.OTF");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+* {
+    font-family: "JannaLT"; 
+}
+.nav-anim {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.nav-anim * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav-anim li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.nav-anim a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-anim a:before,
+.nav-anim a:after {
+  height: 2px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: 	#00B2D4;
+  width: 0;
+}
+.nav-anim a:before {
+  top: 0;
+  left: 0;
+}
+.nav-anim a:after {
+  bottom: 0;
+  right: 0;
+}
+.nav-anim a:hover,
+.nav-anim .current a {
+  color: #ffffff;
+}
+.nav-anim a:hover:before,
+.nav-anim .current a:before,
+.nav-anim a:hover:after,
+.nav-anim .current a:after {
+  width: 100%;
+}
+.nav-bg {
+    background: #001d3b;
+}
+* {
+  box-sizing: border-box;
+}
+.carousel {
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+    height:100%;    
+}
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+.blue {
+    background: #001d3b;
+}
+.light-blue {
+    background: #00B2D4;
+}
+.light-blue2 {
+  color: #00B2D4;
+}
+.muted {
+    background: #f7f8ff;
+}
+.services-section .card {
+    border: 0;
+    border-bottom: .25rem solid #00B2D4;
+}
+.hr-sect-1 {
+	display: flex;
+	align-items: center;
+	margin: 8px 0px;
+}
+.hr-sect-1::after {
+	content: "";
+	flex-grow: 1;
+	background: #00B2D4;
+    height: 2px;
+	margin: 0px 8px;
+}
+.hr-sect-2 {
+	display: flex;
+	align-items: center;
+	margin: 8px 0px;
+}
+.hr-sect-2::after {
+	content: "";
+	flex-grow: 1;
+	background: #001d3b;
+    height: 2px;
+	margin: 0px 8px;
+}
